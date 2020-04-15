@@ -167,7 +167,7 @@ const schemaUser = mongoose.Schema({
     referencia:{
       registro:[{
         nombre:{
-          type: String,
+          type: String
         },
         relacion:{
           type: String,
@@ -194,7 +194,7 @@ const schemaUser = mongoose.Schema({
           }
         },
         telefono:{
-          type: String,
+          type: String
         }
       }]
     }
