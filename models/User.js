@@ -166,7 +166,9 @@ const schemaUser = mongoose.Schema({
     },
     referencia:{
       registro:[{
-        nombre:{},
+        nombre:{
+          type: String,
+        },
         relacion:{
           type: String,
           enum: RELACIONES
@@ -191,7 +193,9 @@ const schemaUser = mongoose.Schema({
             type: String
           }
         },
-        telefono:{}
+        telefono:{
+          type: String,
+        }
       }]
     }
   },
