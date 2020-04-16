@@ -202,7 +202,8 @@ const schemaUser = mongoose.Schema({
   last_updated:{
     type: Date
   }
-});
+},
+{ minimize: false });
 
 const user = mongoose.model('user', schemaUser);
 
