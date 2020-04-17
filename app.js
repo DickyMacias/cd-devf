@@ -1,9 +1,11 @@
 const express = require('express');
 const { User } = require('./models');
+const cors = require('cors');
 
 const app = express();
 const bcrypt = require('bcrypt')
 
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
